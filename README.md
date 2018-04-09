@@ -14,3 +14,7 @@ sudo systemctl start mongod
 sudo systemctl status mongod
 sudo systemctl enable mongod
 ```
+Backup and restore
+```
+mongodump -d myDatabase -o ~/backups/first_backup
+```
