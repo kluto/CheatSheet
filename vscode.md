@@ -9,7 +9,38 @@ Vetur comes with its own linting features. But to avoid syntax checking conflict
 
 npm install --save-dev @vue/eslint-config-prettier prettier eslint-plugin-prettier
 
-
+#### Files
+Create .prettierrc.js:
+```
+module.exports = {
+    singleQuote: true,
+    semi: false
+}
+```
+Create .jsconfig.json:
+```
+{
+    "include": [
+        "./src/**/*"
+    ]
+}
+```
+Add to .eslintrc.js:
+```
+...
+"extends":
+  ...
+  "@vue/prettier"
+  ...
+],
+...
+```
+Add to settings.json:
+```
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
+```
 
 ### Themes
 - Dark: Monokai Dimmed
