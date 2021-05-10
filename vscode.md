@@ -43,5 +43,5 @@ Add to settings.json:
 ```
 
 ### Themes
-- Dark: Monokai Dimmed
-- Light: Winter is Coming
+- Dark: Pop N'Lock Black. Alternatively Monokai Dimmed (less flashy)
+- Light: Quiet Light. Alternatively Winter is Coming (more red)
